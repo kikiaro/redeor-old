@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+
+<head>
+<!-- Do To: DRY -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    <meta name="description" content="Redeor is a dynamic digital and creative agency helping clients from offices in Atlanta, Knoxville and Asheville">
+    <meta name="author" content="Kiki Roeder">
+    <meta name="keywords" content="design,web,development,copywriting,branding,digital,website,business">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <title>Redeor Studio</title>
+
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/icomoon.css" rel="stylesheet">
+    <link href="css/flexslider.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Domine' rel='stylesheet' type='text/css'>
+
+    <!-- Load fonts individually if IE8+, to avoid faux bold & italic rendering -->
+    <!--[if IE]>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Domine' rel='stylesheet' type='text/css'>
+    <![endif]-->
+
+    <!-- Load stylesheet for IE8 -->
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="css/ie8.css" />
+    <![endif]-->
+
+    <!-- Load  stylesheet for IE9 -->
+    <!--[if IE 9]>
+    <link rel="stylesheet" type="text/css" href="css/ie9.css" />
+    <![endif]-->
+
+    <!-- Load jQuery, with an alternative source/fallback, if request is umenuailable -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="home">
+    <!-- Page loader -->
+    <div class="loadstack">
+        <div class="spinner"></div>
+    </div>
+
+<!-- ============================ Main Menu & Navigation ============================ -->
+
+    <div id="menumodal" class="modal fade" tabindex="-1" role="dialog" aria-label="menumodalLabel" aria-hidden="true">
+
+        <!-- Close modal trigger -->
+        <button class="toggleclose" data-dismiss="modal" aria-hidden="true">
+            <span class="icon-close"></span>
+        </button>
+        <div class="explore">
+            <h3>Explore Redeor</h3>
+        </div>
+
+        <!-- Menu Content -->
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <!-- Logo for Desktops/Large Screens -->
+                    <div id="menumodalLabel" class="modal-title">
+                        <div class="modallogo">
+                            <img src="img/logo.png" alt="Redeor Logo">
+                        </div>
+                        <div class="modaltagline">
+                            <h3>A digital and creative strategy studio</h3>
+                        </div>
+                    </div>
+                </div>
+
+          <!-- Navigation -->
+                <div class="modal-body">
+                    <ul class="row motion">
+                        <li class="col-md-4 col-sm-6 two">
+                            <div class="menubg" style="background-image: url('img/nav/1.jpg')"></div>
+                            <a href="index.html" title="Home">Home<span>Transport back to our agency overview.</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 fourteen">
+                            <div class="menubg" style="background-image: url('img/nav/8.jpg')"></div>
+                            <a href="portfolio-sortable.html" title="Sortable Creative Portfolio">Portfolio<span>Explore a sortable portfolio featuring all web + design work.</span></a>
+                        </li>
+                        <!-- <li class="col-md-4 col-sm-6 ten">
+                            <div class="menubg" style="background-image: url('img/nav/9.jpg')"></div>
+                            <a href="portfolio-2col.html" title="Web Development">Web + Digital Development<span>See a showcase of recent web projects.</span></a>
+                        </li> -->
+                        <li class="col-md-4 col-sm-6 sixteen">
+                            <div class="menubg" style="background-image: url('img/nav/9.jpg')"></div>
+                            <a href="strategy.html" title="Branding Strategy">Strategy<span>ranform your organization with digital + creative strategies.</span></a>
+                        </li>
+                         <!-- <li class="col-md-4 col-sm-6 twentyfour">
+                            <div class="menubg" style="background-image: url('img/nav/portfolio.jpg')"></div>
+                            <a href="events.html" title="Events">Events + Training<span>Experience a Redeor training event and/or one of our fun meet-ups.</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 eighteen">
+                            <div class="menubg" style="background-image: url('img/nav/6.jpg')"></div>
+                            <a href="store.html" title="Store">Store<span>Purchase a Redeor graphic print or tech learning lesson.</span></a>
+                        </li> -->
+                        <li class="col-md-4 col-sm-6 eighteen">
+                            <div class="menubg" style="background-image: url('img/nav/2.jpg')"></div>
+                            <a href="about.html" title="About">About<span>Learn about the Redeor Studio, and its super geek founder, Kiki Roeder.</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 twentyfour">
+                            <div class="menubg" style="background-image: url('img/nav/strategy.jpg')"></div>
+                            <a href="contact.html" title="Contact">Contact<span>Connect with Redeor. Really. Would love to hear from you.</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 twentytwo">
+                            <div class="menubg" style="background-image: url('img/nav/blog.jpg')"></div>
+                            <a href="#" title="Blog">Blog<span>Read mental meanderings and research on design, technology and business.</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <h3><a href="contact.html" title="Contact">Get in Touch</a></h3>
+                    <h4>&copy; Copyright Redeor Studio.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ============================ Social Menu (modal window) ============================ -->
+
+    <div id="socialmodal" class="modal fade" tabindex="-1" role="dialog" aria-label="socialmodalLabel" aria-hidden="true">
+
+        <!-- Menu Trigger -->
+        <button class="toggleclose" data-dismiss="modal" aria-hidden="true">
+            <span class="icon-close"></span>
+        </button>
+        <div class="explore">
+            <h3>Be Social</h3>
+        </div>
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h3>Connect with Redeor Founder, Kiki Roeder</h3>
+                    <hr class="mini white central">
+                    <ul class="socialicons motion">
+                        <li class="linkedin"><a href="https://www.linkedin.com/in/kikiroeder" title="LinkedIn" class="linkedin" target="_blank"><span class="icon-linkedin"></span></a></li>
+                        <li class="twitter"><a href="https://twitter.com/kiki__noodle" title="Twitter" target="_blank"><span class="icon-twitter"></span></a></li>
+                        <li class="instagram"><a href="https://instagram.com/kiki__noodle/" title="Instagram" class="instagram" target="_blank"><span class="icon-instagram"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ============================ Header/Fixed Sidebar ============================ -->
+
+    <header id="header">
+        <!-- Main Menu toggle -->
+        <button class="toggle" data-toggle="modal" data-target="#menumodal">
+            <span class="menu-bar bar-1"></span>
+            <span class="menu-bar bar-2"></span>
+            <span class="menu-bar bar-3"></span>
+        </button>
+
+        <!-- Second Logo. Maximum height of 65px -->
+        <div class="mobile_logo">
+            <img src="img/logo.png" alt="Redeor Logo">
+        </div>
+
+        <!-- Bullet Nav -->
+        <nav id="bullets" class="cover">
+            <ul>
+                <li class="current-page-item"><a href="#wrapper"></a></li>
+                <li><a href="#projects"></a></li>
+                <li><a href="#contact"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Social Toggle Menu -->
+    <button class="social" data-toggle="modal" data-target="#socialmodal">
+        <span class="icon-share"></span>
+    </button>
+
+<!-- ============================ Page Content Start ============================ -->
+
+    <!-- Leading Page Container -->
+    <div id="wrapper" class="page-content">
+
+<!-- ============================ Section Start ============================= -->
+
+      <section class="container wow fadeInUp" data-wow-delay="0.5s">
+          <div class="row padding">
+              <div class="col-xs-12 centertext">
+                  <h3>The ever-expanding portfolio</h3>
+                  <hr class="mini central">
+                  <h1>Discover my work. Engage with the Redeor sortable portfolio.</h1>
+              </div>
+          </div>
+      </section>
+
+<!-- ============================ Projects ============================ -->
+
+      <section id="projects" class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12"><!-- Titlebar -->
+            <div class="container-fluid sortlinks">
+              <ul class="filters">
+                <li><p class="filter active" data-filter="branding design graphics ux web">All</li>
+                <li><p class="filter" data-filter="branding">Branding</p></li>
+                <li><p class="filter" data-filter="design">Design</p></li>
+                <li><p class="filter" data-filter="ux">UX</p></li>
+                <li><p class="filter" data-filter="web">Web</p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="projects ux" data-cat="ux">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/01.png" alt="Add alt tag" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="#" title="View Item">Music Traxx<span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects web" data-cat="web">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/02.jpg" alt="Add alt tag" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="#" title="View Item">Artiquery Marketing<span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects branding" data-cat="branding">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/03.jpg" alt="Add alt tag" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="#" title="View Item">UT Admissions Bag<span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects ux" data-cat="ux">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/04.png" alt="Add alt tag" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="#" title="View Item">Blog Design<span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects design" data-cat="design">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/05.jpg" alt="Add alt tag" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="#" title="View Item">Color Block Design Series<span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects ux" data-cat="ux">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/06.jpg" alt="Add alt tag" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="#" title="View Item">Architecture Site UX<span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects design" data-cat="design">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/07.jpg" alt="Add alt tag" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="#" title="View Item">Hand-lettering<span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects design" data-cat="design">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/08.jpg" alt="MAX_minimum Logo" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="#" title="View Item">MAX_minimum Logo<span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects web" data-cat="web">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/09.png" alt="Add alt tag" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="#" title="View Item">Music Website<span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects web" data-cat="web">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/03.png" alt="Add alt tag" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="https://verse.firebaseapp.com/" title="View Item">Verse Music + Social Media App<span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects web" data-cat="web">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/11.png" alt="Add alt tag" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="#" title="View Item">Artiquery Games<span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects design" data-cat="design">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/12.jpg" alt="Add alt tag" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="#" title="View Item">UT Design T-Shirt<span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects design" data-cat="design">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/13.jpg" alt="Add alt tag" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="#" title="View Item">Solar House Infographic<span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects web" data-cat="web">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/14.png" alt="Add alt tag" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="#" title="View Item">Portfolio Infographic<span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects web" data-cat="web">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/29.jpg" alt="Add alt tag" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="#" title="View Item">UT Architecture + Design Website<span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          </div> <!--Marker -->
+
+          <div class="projects ux" data-cat="ux">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/30.jpg" alt="Add alt tag" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="#" title="View Item">Thoyo Shopping App<span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects design" data-cat="design">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/16.jpg" alt="Add alt tag" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="#" title="View Item">Lecture Series Poster Series<span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects ux" data-cat="ux">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/18.png" alt="Add alt tag" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="#" title="View Item">eCommerce Site <span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects design" data-cat="design">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/19.jpg" alt="Add alt tag" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="#" title="View Item">Foldable Poster Book<span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects design" data-cat="design">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/27.jpg" alt="Add alt tag" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="#" title="View Item">You're So Pretty Illustration<span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects design" data-cat="design">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/10.jpg" alt="Add alt tag" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="#" title="View Item">Design Exhibit<span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects ux" data-cat="ux">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/22.png" alt="Add alt tag" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="#" title="View Item">Cooking + Health App<span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects web" data-cat="web">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/23.jpg" alt="Add alt tag" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="#" title="View Item">Artiquery Coloring and Study Kids Site<span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects web" data-cat="web">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/35.jpg" alt="Add alt tag" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="http://thebullpen.herokuapp.com/" title="View Item">Bull Pen Ruby on Rails App<span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects branding" data-cat="branding">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/25.jpg" alt="Add alt tag" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="#" title="View Item">Artiquery Presentation Deck<span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects design" data-cat="design">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/26.jpg" alt="Add alt tag" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="#" title="View Item">Solar House Fact Brochure<span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects web" data-cat="web">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/41.png" alt="Add alt tag" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="http://thebullpen.herokuapp.com/" title="View Item">Bull Pen Baseball Social App<span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects ux" data-cat="ux">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/17.jpg" alt="Add alt tag" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="#" title="View Item">Thoyo Web App UX Design<span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+      <div class="row">
+          <div class="projects ux" data-cat="ux">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/31.png" alt="Add alt tag" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="#" title="View Item">E-Commerce Clothing Site<span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects ux" data-cat="ux">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/33.png" alt="Add alt tag" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="#" title="View Item">Company Site UX<span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects design" data-cat="design">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/34.jpg" alt="Add alt tag" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="#" title="View Item">UT Branding<span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects design" data-cat="design">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/39.jpg" alt="Add alt tag" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="#" title="View Item">Illustrated Graphics<span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects design" data-cat="design">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/40.jpg" alt="Add alt tag" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="#" title="View Item">Color Design Series<span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects web" data-cat="web">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/44.jpg" alt="Add alt tag" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="https://verse.firebaseapp.com/" title="View Item">Music Social Media App, Verse<span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+</div>
+          <div class="projects ux" data-cat="ux">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/45.jpg" alt="Add alt tag" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="#" title="View Item">Blog Design<span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects web" data-cat="web">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/20.png" alt="Add alt tag" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="https://verse.firebaseapp.com/" title="View Item">Verse App, Profile View<span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects web" data-cat="web">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/46.png" alt="Add alt tag" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="http://thebullpen.herokuapp.com/" title="View Item">Bull Pen Social Media Aggregator<span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects branding" data-cat="branding">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/49.jpg" alt="Add alt tag" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="#" title="View Item">University Branding<span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects web" data-cat="web">
+            <div class="projects-wrapper">
+              <img src="img/portfolio/sortable/50.jpg" alt="Add alt tag" />
+              <div class="label">
+                <div class="label-text">
+                  <h3><a href="#" title="View Item">Thoyo Shopping App<span class="icon-arrow-right2"></span></a></h3>
+                </div>
+                <div class="label-bg"></div>
+              </div>
+            </div>
+          </div>
+
+<!-- Holding -->
+
+
+        </div><!-- container -->
+    </section><!-- / .container-fluid -->
+
+<!--Contact + Padding -->
+    <section id="contact"><br></section>
+<!-- =============================== Footer ================================ -->
+
+    <footer class="padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <a href="index.html" title="redeor"><img src="img/logo.png" alt="Redeor to Home"></a>
+                    <p>Redeor Studio</p>
+                    <small>&copy; Copyright 2015 Redeor Studio. All rights reserved.</small>
+                    <hr class="mini central light-grey-dk">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- / END page #wrapper -->
+    </div>
+
+<!-- ========== Javascript ========== -->
+
+    <script src="js/bootstrap.min.js"></script><!-- Bootstrap core - always load first -->
+    <script src="js/wow.min.js"></script><!-- WoW animations -->
+    <script src="js/jquery.easing.min.js"></script><!-- Easing for image animations -->
+    <script src="js/jquery.nav.js"></script><!-- Left-hand bullet navigation -->
+    <script src="js/jquery.nicescroll.min.js"></script><!-- Scrollbars for whole page and main navigation -->
+    <script src="js/jquery.mixitup.min.js"></script><!-- MixItUp plugin - for sortable portfolio -->
+    <script src="js/scripts.js"></script><!-- Custom JS functions - always load last -->
+
+    <!-- Page-specific JS functions - these are functions that only occur on this specific page, so we DON'T want these placed in our scripts.js file as this file is loaded on every page for global site functions.  -->
+
+    <!-- Initialize MixItUp plugin -->
+    <script>
+      $(function () {
+      var filterList = {
+        init: function () {
+
+          $('#projects').mixitup({
+            targetSelector: '.projects',
+            filterSelector: '.filter',
+            effects: ['fade'],
+            easing: 'snap',
+            // call the hover effect
+            onMixEnd: filterList.hoverEffect()
+          });
+
+        },
+
+        hoverEffect: function () {
+          // Hover Effect
+          $('#projects .projects').hover(
+            function () {
+              $(this).find('.label').stop().animate({opacity: 0.8}, 200, 'easeOutQuad');
+              $(this).find('.label-text h3').stop().animate({top: 0}, 200, 'easeOutQuad');
+            },
+            function () {
+              $(this).find('.label').stop().animate({opacity: 0}, 200, 'easeInQuad');
+              $(this).find('.label-text h3').stop().animate({top: '20px'}, 200, 'easeInQuad');
+            }
+          );
+        }
+
+      };
+      filterList.init();
+      });
+    </script>
+
+<!-- ========== Insert your Google Analytics code below this line ========== -->
+
+<!-- ======================== End Google Analytics ========================= -->
+
+</body>
+
+</html>

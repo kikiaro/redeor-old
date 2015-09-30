@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+
+<head>
+<!-- Do To: DRY Code by Creating Imports for Head, Nav, Social and Footer -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" /><!-- Disable horrible auto-skype for contact numbers in IE -->
+    <meta name="description" content="Redeor is a dynamic digital and creative agency helping clients from offices in Atlanta, Knoxville and Asheville">
+    <meta name="author" content="Kiki Roeder">
+    <meta name="keywords" content="design,web,development,copywriting,branding,digital,website,business">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <title>Redeor Studio</title>
+
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/icomoon.css" rel="stylesheet">
+    <link href="css/jquery.fs.wallpaper.css" rel="stylesheet"/><!-- Video css file -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Domine' rel='stylesheet' type='text/css'>
+
+    <!-- Load fonts individually if IE8+, to avoid faux bold & italic rendering -->
+    <!--[if IE]>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Domine' rel='stylesheet' type='text/css'>
+    <![endif]-->
+
+    <!-- Load stylesheet for IE8 -->
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="css/ie8.css" />
+    <![endif]-->
+
+    <!-- Load  stylesheet for IE9 -->
+    <!--[if IE 9]>
+    <link rel="stylesheet" type="text/css" href="css/ie9.css" />
+    <![endif]-->
+
+    <!-- Load jQuery, with an alternative source/fallback to our own version if request is unavailable -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="loadstack">
+        <div class="spinner"></div>
+    </div>
+
+<!-- ============================ Main Menu & Navigation, (odal window) ============================ -->
+
+    <div id="menumodal" class="modal fade" tabindex="-1" role="dialog" aria-label="menumodalLabel" aria-hidden="true">
+
+        <!-- Close modal trigger -->
+        <button class="toggleclose" data-dismiss="modal" aria-hidden="true">
+            <span class="icon-close"></span>
+        </button>
+        <div class="explore">
+            <h3>Explore Redeor</h3>
+        </div>
+
+        <!-- Menu Content -->
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <!-- Logo for Desktops/Large Screens -->
+                    <div id="menumodalLabel" class="modal-title">
+                        <div class="modallogo">
+                            <img src="img/logo.png" alt="Redeor Logo">
+                        </div>
+                        <div class="modaltagline">
+                            <h3>A digital and creative strategy studio</h3>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Navigation -->
+                <div class="modal-body">
+                    <ul class="row motion">
+                        <li class="col-md-4 col-sm-6 two">
+                            <div class="menubg" style="background-image: url('img/nav/1.jpg')"></div>
+                            <a href="index.html" title="Home">Home<span>Transport back to our agency overview.</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 fourteen">
+                            <div class="menubg" style="background-image: url('img/nav/8.jpg')"></div>
+                            <a href="portfolio-sortable.html" title="Sortable Creative Portfolio">Portfolio<span>Explore a sortable portfolio featuring all web + design work.</span></a>
+                        </li>
+                        <!-- <li class="col-md-4 col-sm-6 ten">
+                            <div class="menubg" style="background-image: url('img/nav/9.jpg')"></div>
+                            <a href="portfolio-2col.html" title="Web Development">Web + Digital Development<span>See a showcase of recent web projects.</span></a>
+                        </li> -->
+                        <li class="col-md-4 col-sm-6 sixteen">
+                            <div class="menubg" style="background-image: url('img/nav/9.jpg')"></div>
+                            <a href="strategy.html" title="Branding Strategy">Strategy<span>Tranform your organization with digital + creative strategies.</span></a>
+                        </li>
+                         <!-- <li class="col-md-4 col-sm-6 twentyfour">
+                            <div class="menubg" style="background-image: url('img/nav/portfolio.jpg')"></div>
+                            <a href="events.html" title="Events">Events + Training<span>Experience a Redeor training event and/or one of our fun meet-ups.</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 eighteen">
+                            <div class="menubg" style="background-image: url('img/nav/6.jpg')"></div>
+                            <a href="store.html" title="Store">Store<span>Purchase a Redeor graphic print or tech learning lesson.</span></a>
+                        </li> -->
+                        <li class="col-md-4 col-sm-6 eighteen">
+                            <div class="menubg" style="background-image: url('img/nav/2.jpg')"></div>
+                            <a href="about.html" title="About">About<span>Learn about the Redeor Studio, and its super geek founder, Kiki Roeder.</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 twentyfour">
+                            <div class="menubg" style="background-image: url('img/nav/strategy.jpg')"></div>
+                            <a href="contact.html" title="Contact">Contact<span>Connect with Redeor. Really. Would love to hear from you.</span></a>
+                        </li>
+                        <li class="col-md-4 col-sm-6 twentytwo">
+                            <div class="menubg" style="background-image: url('img/nav/blog.jpg')"></div>
+                            <a href="#" title="Blog">Blog<span>Read mental meanderings and research on design, technology and business.</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <h3><a href="contact.html" title="Contact">Get in Touch</a></h3>
+                    <h4>&copy; Copyright Redeor Studio.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ============================ Social Menu (modal window) ============================ -->
+
+    <div id="socialmodal" class="modal fade" tabindex="-1" role="dialog" aria-label="socialmodalLabel" aria-hidden="true">
+
+        <!-- Menu Trigger -->
+        <button class="toggleclose" data-dismiss="modal" aria-hidden="true">
+            <span class="icon-close"></span>
+        </button>
+        <div class="explore">
+            <h3>Be Social</h3>
+        </div>
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h3>Connect with Redeor Founder, Kiki Roeder</h3>
+                    <hr class="mini white central">
+                    <ul class="socialicons motion">
+                        <li class="linkedin"><a href="https://www.linkedin.com/in/kikiroeder" title="LinkedIn" class="linkedin" target="_blank"><span class="icon-linkedin"></span></a></li>
+                        <li class="twitter"><a href="https://twitter.com/kiki__noodle" title="Twitter" target="_blank"><span class="icon-twitter"></span></a></li>
+                        <li class="instagram"><a href="https://instagram.com/kiki__noodle/" title="Instagram" class="instagram" target="_blank"><span class="icon-instagram"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ============================ Header/Fixed Sidebar ============================ -->
+
+    <header id="header">
+        <!-- Main Menu Toggle -->
+        <button class="toggle" data-toggle="modal" data-target="#menumodal">
+            <span class="menu-bar bar-1"></span>
+            <span class="menu-bar bar-2"></span>
+            <span class="menu-bar bar-3"></span>
+        </button>
+
+        <!-- Second logo for mobile only. -->
+        <div class="mobile_logo">
+            <img src="img/logo.png" alt="Redeor Logo">
+        </div>
+
+        <!-- Bullet navigation -->
+        <nav id="bullets" class="cover">
+            <ul>
+                <li><a href="#wrapper"></a></li>
+                <li><a href="#team"></a></li>
+                <li><a href="#timeline"></a></li>
+                <li><a href="#mission"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Social menu toggle -->
+    <button class="social" data-toggle="modal" data-target="#socialmodal">
+        <span class="icon-share"></span>
+    </button>
+
+<!-- ============================ Page Content Start ============================ -->
+
+    <div id="wrapper" class="page-content">
+
+<!-- ============================ About ============================ -->
+
+    <section id="two" class="container wow fadeInUp" data-wow-delay="0.5s">
+        <div class="row padding">
+            <div class="col-xs-12 centertext">
+                <h3>Where did Redeor come from?</h3>
+                    <hr class="mini central">
+                    <h1>Redeor has been shaping into being for over a decade.</h1>
+                    <hr class="title">
+                    <p>Redeor, a digital and creative strategy studio, which is producing work in four states, began as the brainchild of Kiki Roeder.
+                    <br>
+                    Launching her career as a successful business developer, Roeder translated her understanding of people into a robust marketing and communications career. This later thundered into design, user experience and web development.</p>
+            </div>
+        </div>
+    </section>
+
+<!-- ============================ Team Section ============================ -->
+
+        <section id="team" class="container-fluid dark-grey-dk">
+            <div class="row clearfix">
+                <ul class="col-md-6 team-avatars">
+                    <li class="wow fadeInUp animated" data-wow-delay="0.2s">
+                      <a href="#tm1" class="active"><img src="img/avatars/head.jpg" alt="Kiki Roeder"></a>
+                    </li>
+                    <li class="wow fadeInUp animated" data-wow-delay="0.4s">
+                      <a href="#tm2"><img src="img/avatars/head.jpg" alt="Kiki Roeder"></a>
+                    </li>
+                    <li class="wow fadeInUp animated" data-wow-delay="0.6s">
+                      <a href="#tm3"><img src="img/avatars/head.jpg" alt="Kiki Roeder"></a>
+                    </li>
+                    <li class="wow fadeInUp animated" data-wow-delay="0.8s">
+                      <a href="#tm4"><img src="img/avatars/head.jpg" alt="Kiki Roeder"></a>
+                    </li>
+                    <li class="wow fadeInUp animated" data-wow-delay="1.0s">
+                      <a href="#tm5"><img src="img/avatars/head.jpg" alt="Kiki Roeder"></a>
+                    </li>
+                    <li class="wow fadeInUp animated" data-wow-delay="1.2s">
+                      <a href="#tm6"><img src="img/avatars/head.jpg" alt="Kiki Roeder"></a>
+                    </li>
+                    <li class="wow fadeInUp animated" data-wow-delay="1.4s">
+                      <a href="#tm7"><img src="img/avatars/head.jpg" alt="Kiki Roeder"></a>
+                    </li>
+                    <li class="wow fadeInUp animated" data-wow-delay="1.6s">
+                      <a href="#tm8"><img src="img/avatars/head.jpg" alt="Kiki Roeder"></a>
+                    </li>
+                    <li class="wow fadeInUp animated" data-wow-delay="1.8s">
+                      <a href="#tm9"><img src="img/avatars/head.jpg" alt="Kiki Roeder"></a>
+                    </li>
+                    <li class="wow fadeInUp animated" data-wow-delay="2.0s">
+                      <a href="#tm10"><img src="img/avatars/head.jpg" alt="Kiki Roeder"></a>
+                    </li>
+                </ul>
+                <div class="col-md-6 team-content">
+                    <div id="tm1" class="team-meta active">
+                        <h3>Founder</h3>
+                        <hr class="mini central">
+                        <p>Kiki Roeder</p>
+                        <cite><a href="#"><span class="icon-twitter"></span> @kiki__noodle</a></cite>
+                    </div>
+                    <div id="tm2" class="team-meta">
+                        <h3>Web Developer</h3>
+                        <hr class="mini central">
+                        <p>Kiki Roeder</p>
+                        <cite><a href="#"><span class="icon-twitter"></span> @kiki__noodle</a></cite>
+                    </div>
+                    <div id="tm3" class="team-meta">
+                        <h3>Graphic Designer</h3>
+                        <hr class="mini central">
+                        <p>Kiki Roeder</p>
+                        <cite><a href="#"><span class="icon-twitter"></span> @kiki__noodle</a></cite>
+                    </div>
+                    <div id="tm4" class="team-meta">
+                        <h3>Digital Strategist</h3>
+                        <hr class="mini central">
+                        <p>Kiki Roeder</p>
+                        <cite><a href="#"><span class="icon-twitter"></span> @kiki__noodle</a></cite>
+                    </div>
+                    <div id="tm5" class="team-meta">
+                        <h3>Business Developer</h3>
+                        <hr class="mini central">
+                        <p>Kiki Roeder</p>
+                        <cite><a href="#"><span class="icon-twitter"></span> @kiki__noodle</a></cite>
+                    </div>
+                    <div id="tm6" class="team-meta">
+                        <h3>Unicorn</h3>
+                        <hr class="mini central">
+                        <p>Kiki Roeder</p>
+                        <cite><a href="#"><span class="icon-twitter"></span> @kiki__noodle</a></cite>
+                    </div>
+                    <div id="tm7" class="team-meta">
+                        <h3>UX Designer</h3>
+                        <hr class="mini central">
+                        <p>Kiki Roeder</p>
+                        <cite><a href="#"><span class="icon-twitter"></span> @kiki__noodle</a></cite>
+                    </div>
+                    <div id="tm8" class="team-meta">
+                        <h3>Entrepreneur</h3>
+                        <hr class="mini central">
+                        <p>Kiki Roeder</p>
+                        <cite><a href="#"><span class="icon-twitter"></span> @kiki__noodle</a></cite>
+                    </div>
+                    <div id="tm9" class="team-meta">
+                        <h3>Creative Strategist</h3>
+                        <hr class="mini central">
+                        <p>Kiki Roeder</p>
+                        <cite><a href="#"><span class="icon-twitter"></span> @kiki__noodle</a></cite>
+                    </div>
+                    <div id="tm10" class="team-meta">
+                        <h3>Jill of All Trades</h3>
+                        <hr class="mini central">
+                        <p>Kiki Roeder</p>
+                        <cite><a href="#"><span class="icon-twitter"></span> @kiki__noodle</a></cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- ============================ Timeline ============================ -->
+
+        <section id="timeline" class="white">
+            <div class="container padding">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h3>Timeline</h3>
+                        <hr class="mini">
+                        <p>Wonder. Activity. Grit. Here, the Redeor Studio was born.</p>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <div class="row">
+                    <div class="timeline-centered">
+                        <div class="line"></div>
+                        <div class="present">Now</div>
+                        <div class="dot_tp"></div>
+                        <div class="born">Born</div>
+                        <div class="dot_bt"></div>
+                        <article class="timeline-entry">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon bg-secondary"></div>
+                                <div class="timeline-label">
+                                    <h3>September 2015</h3>
+                                    <p>The Redeor Studio officially launches into the public sphere.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="timeline-entry">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon bg-success"></div>
+                                <div class="timeline-label">
+                                    <h3>July 2015</h3>
+                                    <p>Consultancy and business development take off with clients sprouting across the Southeast.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="timeline-entry">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon bg-warning"></div>
+                                <div class="timeline-label">
+                                    <h3>June 2015</h3>
+                                    <p>The Redeor Studio develops its first series of web apps.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="timeline-entry">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon bg-secondary"></div>
+                                <div class="timeline-label">
+                                    <h3>May 2015</h3>
+                                    <p>Roeder moves to Atlanta and begins the three-month Web Development Immersive at General Assembly, building upon her seven years of coding experience.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="timeline-entry">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon bg-success"></div>
+                                <div class="timeline-label">
+                                    <h3>April 2015</h3>
+                                    <p>Founder Kiki Roeder leaves position as Director of Communications and Digital Strategy at the University of Tennessee to start the Redeor Studio.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- ============================ Video Break ============================ -->
+        <div id="mission">
+        <section id="elementvid" class="container-fluid"></section>
+
+<!-- ============================ Mission ============================ -->
+        <section class="white">
+            <div class="container padding">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h3>Mission</h3>
+                        <hr class="mini">
+                        <p>The goal of the Redeor Studio is to create purposeful work, bursting with functionality and beauty, which is honest, reasonable and impactful.</p>
+                        <hr class="mini">
+                        <p>Be a part of the journey. <br>
+                        <a href="contact.html">Connect with Redeor.</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- ============================ Footer ============================ -->
+
+    <footer class="padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <a href="index.html" title="redeor"><img src="img/logo.png" alt="Redeor to Home"></a>
+                        <p>Redeor Studio</p>
+                        <small>&copy; Copyright 2015. All rights reserved.</small>
+                        <hr class="mini central light-grey-dk">
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+    <!-- / END page #wrapper -->
+    </div>
+
+<!-- ========== Javascript ========== -->
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.nav.js"></script><!-- Left-hand bullet navigation -->
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script><!-- Easing plugin, for opacity fade on menu background images -->
+    <script src="js/jquery.fs.wallpaper.js"></script><!-- Video plugin -->
+    <script src="js/scripts.js"></script><!-- Custom JS functions  -->
+
+    <!-- Page-specific JS functions -->
+
+    <!-- Initialize background video in hero section (above the fold) -->
+    <script>
+        $(document).ready(function() {
+            $("#elementvid").wallpaper({
+                source: {
+                    poster: "video/mobile-fallback.jpg",
+                    mp4:    "video/hero.mp4",
+                    ogg:    "video/hero.ogv",
+                    webm:   "video/hero.webm"
+                }
+            });
+        });
+    </script>
+
+<!-- ========== Insert Google Analytics code below  ========== -->
+
+</body>
+
+</html>
