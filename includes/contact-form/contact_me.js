@@ -45,7 +45,7 @@ $(function() {
    		 $('#success').html("<div class='alert alert-danger'>");
               	$('#success > .alert-danger').html("")
               	 .append( "</button>");
-              	$('#success > .alert-danger').append("WHOA! <strong>Sorry "+firstName+", it seems my email system is having a moment...</strong> Please email me directly to <a href='mailto:me@example.com'>me@example.com</a>.");
+              	$('#success > .alert-danger').append("WHOA! <strong>Sorry "+firstName+", it seems my email system is having a moment...</strong> Please email me directly to <a href='mailto:redeor.design@gmail.com'>redeor.design@gmail.com</a>.");
    	        $('#success > .alert-danger').append('</div>');
    		// Clear all fields
    		$('#contactForm').trigger("reset");
